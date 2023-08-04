@@ -1,5 +1,5 @@
 const displayData = async () => {
-  const data = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/CobbyElson/scores');
+  const data = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Cobby/scores');
   const arrData = await data.json();
   const tableContainer = document.querySelector('.tableContainer');
   tableContainer.innerHTML = '';

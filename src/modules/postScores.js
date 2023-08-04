@@ -2,12 +2,12 @@ const postData = async (user, score) => {
   try {
     const userData = {
       name: 'My leatherboard',
-      return: 'Game with ID: CobbyElson added.',
+      return: 'Game with ID: Cobby added.',
       user,
       score,
     };
 
-    const data = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/CobbyElson/scores', {
+    const data = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Cobby/scores', {
       method: 'post',
       body: JSON.stringify(userData),
       headers: {
@@ -16,7 +16,9 @@ const postData = async (user, score) => {
     });
     if (data.status === 201) {
       const successMess = document.querySelector('.successMess');
-      successMess.textContent = 'Score added successfully';
+      setTimeout(() => {
+        successMess.textContent = 'Score added successfully';
+      }, 1000);
     }
   } catch (error) {
     throw new Error('Something went wrong');

@@ -20,3 +20,5 @@ formBtn.addEventListener('click', (ev) => {
 
 const refreshBtn = document.querySelector('#refreshBtn');
 refreshBtn.onclick = displayData;
+
+window.onload = displayData;
