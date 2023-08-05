@@ -7,29 +7,29 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-    <header class="container title"><h1>Leaderboard</h1></header>
+    <header class="container "><h1 class="title">Leader<img src="./images/winner.png" class="headerImg" alt="medal"> <span class="boardhd">BOARD</span> </h1></header>
     <main class="main  container">
         <div class="row">
-            <div class="col-xm-12 col-sm-8 col-md-8">
+            <div class="col-xm-12 col-sm-12 col-md-7">
                 <div id="tableHeader">
-                    <h2>Recent  Scores</h2>
-                    <button id="refreshBtn" class="btn" type="button">Refresh</button>
+                    <h2  class="recentScores">Recent  Scores</h2>
+                    <div><img id="refreshBtn" src="./images/refresh.png" ></div>
                 </div>
                 <div class="leaderboardTable">
                     <ul class="tableContainer">
                     </ul>
                 </div>
               </div>
-              <div class="col-xm-12 col-sm-4 col-md-4 formSection">
+              <div class="col-xm-12 col-sm-12 col-md-5 formSection">
                 <div>
-                    <h2>Add your scores</h2>
+                    <h2 class="addScores">Add your scores</h2>
                 </div>
-                <form id="form" >
+                <form class="form" id="form" >
                     <div class="mt-2">
                         <label for="name"></label>
                         <input type="text" placeholder="Enter Name" name="user"  id="usernameInput"  required>
                     </div>
-                    <div class="mt-2    ">
+                    <div class="mt-2">
                         <label for="score"></label>
                         <input type="number" placeholder="Enter Score"  name="score" id="score" required>
                     </div>

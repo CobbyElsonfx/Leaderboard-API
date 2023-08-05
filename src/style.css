@@ -7,42 +7,138 @@
 body {
   width: 100vw;
   height: 100%;
+  background-image: url("./assets/bg.jpg");
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 li {
   list-style: none;
 }
 
+button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #28235a;
+  transition: all 0.3s ease-in-out;
+}
+
+header {
+  display: flex;
+  width: 100%;
+}
+
 .title {
-  margin-top: 1rem;
+  padding-top: 1rem;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 2rem;
+  align-self: center;
+  margin: auto;
+}
+
+.headerImg {
+  width: 3.5rem;
+  height: auto;
+  padding-bottom: 1rem;
+}
+
+.boardhd {
+  color: goldenrod;
+  font-size: 3rem;
 }
 
 .main {
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .leaderboardTable {
+  z-index: 99;
   margin: auto;
+  backdrop-filter: blur(10px);
   padding: 1rem 2rem 1rem 0;
-  background-color: rgb(220, 231, 231);
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(12, 11, 11, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.26);
 }
 
 #tableHeader {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 1rem 1rem 0;
+  padding: 0 2rem 1rem 2rem;
+}
+
+.recentScores {
+  font-size: 26px;
+}
+
+#refreshBtn {
+  width: 2rem;
+  height: 2rem;
+  color: #070336;
 }
 
 .tableContainer {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  width: 100%;
 }
 
 .eachDetail {
   padding: 1rem;
-  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  z-index: 101;
+}
+
+.medal {
+  width: 2.5rem;
+  height: auto;
+}
+
+.userProfile {
+  width: 2rem;
+  height: 2rem;
+}
+
+.nameAndScore {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  background-color: #070336;
+  justify-content: space-between;
+  border-top-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  align-items: center;
+  padding: 5px 15px 5px 15px;
+}
+
+.nameAndScore:hover {
+  background-color: #1404339e;
+  transition: all 0.3s ease-in-out;
+}
+
+.nameAndScore h3 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.nameAndScore .username {
+  color: goldenrod;
+  font-weight: 900;
+  letter-spacing: 5px;
 }
 
 .formSection {
@@ -50,6 +146,14 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+}
+
+.addScores {
+  font-size: 20px;
+  background: #1404339e;
+  border-radius: 16px 0 16px 0;
+  padding: 0.5rem;
 }
 
 input {
@@ -67,13 +171,36 @@ form {
 }
 
 .successMess {
-  color: rgb(4, 134, 4);
+  color: goldenrod;
+  font-size: 15px;
+  font-weight: 600;
+  font-style: italic;
 }
 
-@media (width <= 575px) {
+@media (width <= 765px) {
   .row {
     display: flex;
     flex-direction: column-reverse;
     gap: 2rem;
+  }
+
+  title {
+    padding-top: 1rem;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1.5rem;
+    align-self: center;
+    margin: auto;
+  }
+
+  .headerImg {
+    width: 3rem;
+    height: auto;
+    padding-bottom: 1rem;
+  }
+
+  .boardhd {
+    color: goldenrod;
+    font-size: 2rem;
   }
 }
