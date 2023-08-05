@@ -5,10 +5,7 @@ const displayData = async () => {
   tableContainer.innerHTML = '';
   arrData.result.sort((a, b) => b.score - a.score).forEach((element, index) => {
     const addPositionSuffix = (number) => {
-      if (number > 3) {
         return 'th';
-      }
-      return '';
     };
 
     const medalPosition = [
