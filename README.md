@@ -46,7 +46,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Coming Soon]()
+- [Live Project](https://cobbyelsonfx.github.io/Leaderboard-API/dist/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
