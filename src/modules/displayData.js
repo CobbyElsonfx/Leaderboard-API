@@ -4,12 +4,7 @@ const displayData = async () => {
   const tableContainer = document.querySelector('.tableContainer');
   tableContainer.innerHTML = '';
   arrData.result.sort((a, b) => b.score - a.score).forEach((element, index) => {
-    const addPositionSuffix = (number) => {
-      if (number > 3) {
-        return 'th';
-      }
-      return '';
-    };
+    const addPositionSuffix = () => 'th';
 
     const medalPosition = [
       './images/first.png',
