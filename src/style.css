@@ -46,9 +46,9 @@ li {
 }
 
 .formSection {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -64,6 +64,10 @@ form {
 
 .formBtn {
   align-self: self-end;
+}
+
+.successMess {
+  color: rgb(4, 134, 4);
 }
 
 @media (width <= 575px) {
