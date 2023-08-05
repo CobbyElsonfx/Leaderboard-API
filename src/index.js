@@ -35,7 +35,7 @@ refreshBtn.addEventListener('click', () => {
   setTimeout(() => {
     refreshBtn.style.display = 'inline';
     refreshBtn.style.transform = 'rotate(360deg)';
-    refreshBtn.style.transition = 'transform 20s ease-in-out';
+    refreshBtn.style.transition = 'all 2s ease-in-out';
     successMess.textContent = '';
     displayData();
   }, 100);
