@@ -158,11 +158,10 @@ header {
 
 input {
   width: 100%;
-  padding: 0.25rem;    
+  padding: 0.25rem;
   background-color: #060420;
-  outline-color: none;
   border: 1px solid white;
-  color:white;
+  color: white;
   border-radius: 4px;
 }
 
